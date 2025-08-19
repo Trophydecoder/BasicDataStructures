@@ -1,42 +1,38 @@
-//STACKS ARE A DATA STRUCTURE WHERE YOU ADD OR REMOVE ITEMS FOLLOWING THE
-//LIFO (last in last first out)
-//element that is last in an array Is the first element that will be out 
+//QUEUES ARE A DATA STRUCTURE WHERE YOU ADD OR REMOVE ITEMS FOLLOWING THE
+//FIFO (First in first out)
+//element that is first in an array Is the first element that will be out 
 //when we remove 
-//its also the last elemet whebn we push multiple elements
-
-//works like plates , when we add plates the one on top is the last one 
-//when its time for food its the first one to go out
-
+//its also the first elemet whebn we push multiple elements
 
 class Stack {
     constructor() {
       this.items = [] // we keep all our values in this array
     }
   
-    // Add (push) a value to the top
+    // psuh the values in the array
     push(value) {
       this.items.push(value)
       console.log(value + " added to stack")
     }
   
-    // Remove (pop) the value from the top
-    pop() {
+    // Remove shfit the value from the first element in the array
+   shift() {
       if (this.items.length === 0) {
         console.log("Stack is empty")
         return null
       }
-      let removed = this.items.pop()
+      let removed = this.items.shift()
       console.log(removed + " removed from stack")
       return removed
     }
   
-    // Show the current top value 
-    currenttop() {
+    // Show the current first value 
+    currentfirst() {
       if (this.items.length === 0) {
         console.log("Stack is empty")
         return null
       }
-      return this.items[this.items.length - 1]
+      return this.items[this.items.length - 2]
     }
   
     // Show how many items are in the stack
@@ -52,7 +48,7 @@ class Stack {
   
 
 //was confused by the stack class on top where i create methods
-//so we can call them here on a new one
+//so we can call them here on a new one 
   const stack = new Stack()
   
   stack.push("apple")   
@@ -61,11 +57,14 @@ class Stack {
   
   stack.print()        
   
-  console.log("Top is:", stack.currenttop()) 
+ 
   
-  stack.pop()           
+  stack.shift()   
+  console.log("currentfirst is:", stack.currentfirst())         
   stack.size()
   stack.print()         
 
+
+  
 
   
