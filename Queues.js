@@ -3,6 +3,9 @@
 //element that is first in an array Is the first element that will be out 
 //when we remove 
 //its also the first elemet whebn we push multiple elements
+//works like queues vele, first one whos on the queues
+//is the first one to be served / first one to go 
+
 
 class Stack {
     constructor() {
