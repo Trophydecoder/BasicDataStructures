@@ -1,6 +1,6 @@
 const  array = [13 , 7 , 23 ,54 , 90 , 1]
 
-//selection sort -> take the first index in the array(the sorted side) and search 
+//selection sort -> take the first index in the array(the sorted side) make an assumption that its the smallest number  and search 
 //through the unsorted for the smallest/biggest to compare and swap 
 
 const selectionsort = array => {
