@@ -1,5 +1,5 @@
 
-const array = [ 6 , 1 , 11 , 19 , 27 , 3]
+const array = [ 6 , 1 , 11 , 19 , 27 , 3]  ///data structure
 
 
 //first iteration  [1 , 6 , 11 , 19 , 3 ,27]
@@ -11,9 +11,13 @@ const bubblesort = array => {
 const len = array.length;
 
 for (let i = 0 ; i < len ; i++){
+
   for(let j = i + 1; j < len; j++){
+
     if(array[j] < array[i]){
-      //swap
+
+
+    //swap
     const temp = array[i]
     array[i] = array[j]
     array[j] = temp
